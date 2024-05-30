@@ -1,0 +1,2 @@
+�^D��^@^@^@^@^@^@^@}�(�^Esshrm��3ssh slave@192.168.10.61 'sudo rm /var/cache/bind/*'��
+sshrestart��6ssh slave@192.168.10.61 'sudo systemctl restart bind9'�u.
