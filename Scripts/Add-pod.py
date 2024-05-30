@@ -20,19 +20,19 @@ nombre_pod = par_2_servername
 nombre_volumen = par_2_servername
 
 
-dic = {       'password':"Super3ies1234.",
-                'hostbdd':"192.168.10.90", 'puertobdd':3307, 'userbdd':"admin", 'databdd':"FDominex",
-                'sshpfsense':"ssh -i /home/master/.ssh/id_rsa_new admin@192.168.10.1 'python3.11 /a.py ",
-                'sshdns':"ssh -i /home/master/.ssh/dnss master@192.168.10.60 'python3 /etc/bind/zonas/add-dns.py "
-}
-fileObj = open('master.obj', 'wb')
-pickle.dump(dic,fileObj)
-fileObj.close()
+#dic = {       'password':"Super3ies1234.",
+#                'hostbdd':"192.168.10.90", 'puertobdd':3307, 'userbdd':"admin", 'databdd':"FDominex",
+#                'sshpfsense':"ssh -i /home/master/.ssh/id_rsa_new admin@192.168.10.1 'python3.11 /a.py ",
+#                'sshdns':"ssh -i /home/master/.ssh/dnss master@192.168.10.60 'python3 /etc/bind/zonas/add-dns.py "
+#}
+#fileObj = open('master.obj', 'wb')
+#pickle.dump(dic,fileObj)
+#fileObja.close()
 
 
 fileObja = open('/home/master/SCRIPTS/master.obj', 'rb')
 dic = pickle.load(fileObja)
-fileObj.close()
+fileObja.close()
 
 
 
